@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        #h1id{
+            color: blue;
+        }
+
+        .h1class{
+            background-color: aqua;
+        }
+
+        h1{
+            
+            border-color: blueviolet;
+        }
+
+        p,u{
+            background-color: yellow;
+        }
+
+        *{
+            text-align: center;
+            padding: 30px;
+        }
+
+        .divc{
+            background-color: brown;
+        }
+
+        div h1{
+            color: green;
+        }
+
+        div>h1{
+            color: violet;
+        }
+
+        div>h1>span{
+            color: green;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="h1id">Hello</h1>
+    <h1 class="h1class">Hello</h1>
+    <div class="divc">
+        <h1>Hello</h1>
+        <h1>Hello,<span>Sanketh</span></h1>
+        <h1>Hello</h1>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptatibus, minima quod neque, maiores, esse dicta aspernatur qui sit explicabo facilis sed repellendus alias? Molestias reiciendis voluptates debitis nemo maxime.</p>
+
+    <u>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem neque ab et facilis odit accusantium harum. Esse nisi ea eius porro suscipit distinctio iste explicabo qui necessitatibus, sed, dolorum incidunt.</u>
+</body>
+</html>

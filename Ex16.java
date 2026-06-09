@@ -53,21 +53,43 @@ public class Ex16 {
 
         // WAJP to get the max ele from the given array
 
-        int[] a = { 100, 250, 30, 400, 507, 60 };
-        int max = a[0];
+        // int[] a = { 100, 250, 30, 400, 507, 60 };
+        // int max = a[0];
 
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] > max) {
-                max = a[i];
-            }
-        }
+        // for (int i = 0; i < a.length; i++) {
+        //     if (a[i] > max) {
+        //         max = a[i];
+        //     }
+        // }
 
-        System.out.println(max);
+        // System.out.println(max);
 
 
 
         // Assignment :
         // 1. Min from 1st half and max from 2nd half
+
+
+        int[] arr = {10, 20, 30, 40, 50, 60};
+
+        int mid = arr.length / 2;
+
+        int min = arr[0];
+        for (int i = 0; i < mid; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+
+        int max = arr[mid];
+        for (int i = mid; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+
+        System.out.println("Minimum from first half: " + min);
+        System.out.println("Maximum from second half: " + max);
     }
 
 }
