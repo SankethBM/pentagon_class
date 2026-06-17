@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Gradient Examples</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+      }
+
+      .box {
+        width: 300px;
+        height: 150px;
+        margin: 10px auto;
+        border: 2px solid black;
+        color: white;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .container h2 {
+        grid-column: 1 / -1;
+      }
+
+      .linear1 {
+        background: linear-gradient(yellow, red);
+      }
+
+      .linear2 {
+        background: linear-gradient(to right, blue, cyan);
+      }
+
+      .linear3 {
+        background: linear-gradient(45deg, purple, pink);
+      }
+
+      .radial1 {
+        background: radial-gradient(red, yellow);
+      }
+
+      .radial2 {
+        background: radial-gradient(blue, white);
+        color: black;
+      }
+
+      .radial3 {
+        background: radial-gradient(purple, pink);
+      }
+
+      .conic1 {
+        background: conic-gradient(red, yellow, green, blue, red);
+      }
+
+      .conic2 {
+        background: conic-gradient(pink, purple, pink);
+      }
+
+      .conic3 {
+        background: conic-gradient(orange, white, green, orange);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="">
+      <h1>Gradient Examples</h1>
+
+      <div class="container">
+        <h2>Linear Gradients</h2>
+        <div class="box linear1"></div>
+        <div class="box linear2"></div>
+        <div class="box linear3"></div>
+
+        <h2>Radial Gradients</h2>
+        <div class="box radial1"></div>
+        <div class="box radial2"></div>
+        <div class="box radial3"></div>
+
+        <h2>Conic Gradients</h2>
+        <div class="box conic1"></div>
+        <div class="box conic2"></div>
+        <div class="box conic3"></div>
+      </div>
+    </div>
+  </body>
+</html>
